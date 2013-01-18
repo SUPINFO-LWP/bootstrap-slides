@@ -29,4 +29,4 @@ after_script:
 
 env:
   global:
-  - secret: ! "Y+cAIgb2uUPmD9pkeW1B+QS2cJES8Kbp7BHcUl+yew/nly0pExLCaZXaJ7UJ\nDvMtznAzV14LrmrNymOWr0i93QxKIGCJYMT0OwlORTAq8VUbE19GVUXQp9zY\nV9CwZ29NDxpfuihObBg048moIX27O0iKQzqHpodeoN7KPgf+QcY="
+  - secure: ! "Y+cAIgb2uUPmD9pkeW1B+QS2cJES8Kbp7BHcUl+yew/nly0pExLCaZXaJ7UJ\nDvMtznAzV14LrmrNymOWr0i93QxKIGCJYMT0OwlORTAq8VUbE19GVUXQp9zY\nV9CwZ29NDxpfuihObBg048moIX27O0iKQzqHpodeoN7KPgf+QcY="
