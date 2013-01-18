@@ -30,3 +30,4 @@ after_script:
 env:
   global:
     - secure: ! "qrLpLviFCYQ4pdyq0ciiracXrkEvkYPNOvGZNXscPq8YIbQkpqBncfhVItF+\nflmeT7tdPOADtwSXNcoICumakRf70ESgqmOGRCPhw5E/IlPmndCfy7x8B6pL\npj9cj7uhg75QrvZMx1IiyYJUILdJ/hxDf8+C30ef1yxzZ1bFjQc="
+
