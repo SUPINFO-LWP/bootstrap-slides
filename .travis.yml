@@ -1,0 +1,32 @@
+branches:
+  only:
+    - master
+
+language: python
+
+install:
+  - sudo pip install -q pygments landslide jinja2 markdown
+
+before_script:
+  - openssl des3 -d -a -in .travis/ssh_deploy_key.enc -k "$SSH_KEY_SECRET" > ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
+
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - git remote add deploy git@github.com:SUPINFO-LWP/bootstrap-slides.git
+
+  - git config --global user.name "Adrien Brault"
+  - git config --global user.email adrien.brault@gmail.com
+
+script:
+  - sh -c "find . -name \"*.cfg\" -exec landslide {} \;"
+
+after_script:
+  - git checkout --orphan gh-pages
+  - git rm -r --cached .
+  - git add -f *.html
+  - git commit -m "Deploy"
+  - git push deploy gh-pages -f
+
+env:
+  global:
+    - secure: ! "qrLpLviFCYQ4pdyq0ciiracXrkEvkYPNOvGZNXscPq8YIbQkpqBncfhVItF+\nflmeT7tdPOADtwSXNcoICumakRf70ESgqmOGRCPhw5E/IlPmndCfy7x8B6pL\npj9cj7uhg75QrvZMx1IiyYJUILdJ/hxDf8+C30ef1yxzZ1bFjQc="
