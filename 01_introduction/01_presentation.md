@@ -1,9 +1,11 @@
-# Bootstrap presentation
+# Bootstrap introduction
 
 ---
 
-# Hey!
+# Plan
 
-- Nice feature 1
-- Nice feature 2
-- gangnam style!
+*	Quésaco
+*	Quel sont les autres solution ?
+*	Pourquoi s'en servir ?
+*	Architecture
+*	Installation
