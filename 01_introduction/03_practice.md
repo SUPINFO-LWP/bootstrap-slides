@@ -53,3 +53,51 @@
 		</div>
 	</div>
 
+---
+
+# Outils Javascript !
+
+* Quelques outils
+* Implémentation du Popover
+
+---
+
+# On déclare notre élément JS
+
+	$("[rel=popover]").popover()
+	
+---
+
+# 1ère façon : injection des paramètres dans le code HTML
+
+	<a href="#" rel="popover" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua." data-original-title="TITLE OK" data-placement="bottom">
+	 about
+	</a>
+
+---
+
+# 2ème façon : Injection des paramères dans le code JS
+
+	$("[rel=popover1]").popover({title: "Instruction 1", content:"Voici le résumé de ce que tu trouvera dans cet onglets, c'est fabuleux bootstrap",
+    	placement: "bottom", trigger: 'hover'});
+    	
+---
+
+# Quelques paramètre du Popover
+
+* placement ("right"|"left"|"top"|"bottom")
+* trigger ( "click" | "hover" | "focus" | "manual")
+* title
+* content
+* delay
+*exemple -> delay: { show: 500, hide: 100 }
+	
+---
+
+# Personnification du Popover
+
+* On réecris le template :
+	$("[rel=popover2]").popover({template : '<div class="popover"><div class="arrow"></div>
+		<div class="popover-inner"><div class="popover-content"><p></p></div></div></div>', placement: "bottom", trigger: "hover" })
+	
