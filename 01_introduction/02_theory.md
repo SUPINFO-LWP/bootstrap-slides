@@ -1,4 +1,4 @@
-# Theory
+# Théorie
 
 ---
 
@@ -9,7 +9,7 @@
 
 ---
 
-# Quel sont les autres solution ?
+# Quelles sont les autres solutions ?
 
 *	Grid960
 *	Inuitcss

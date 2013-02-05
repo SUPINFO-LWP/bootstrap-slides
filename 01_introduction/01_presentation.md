@@ -1,11 +1,11 @@
-# Bootstrap introduction
+# Introduction à Bootstrap
 
 ---
 
 # Plan
 
 *	Quésaco
-*	Quel sont les autres solution ?
+*	Quelles sont les autres solutions ?
 *	Pourquoi s'en servir ?
 *	Architecture
 *	Installation
