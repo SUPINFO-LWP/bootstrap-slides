@@ -13,10 +13,10 @@
 
 ---
 
-# Premier pas !
+# Premiers pas !
 
 *	<p>Hello world</p>
-*	Sytème de grille
+*	Système de grille
 
 ---
 
@@ -44,7 +44,7 @@
 # Correction
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navebar-inner">
+		<div class="navbar-inner">
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 					<li><!-- Au travail --></li>
@@ -65,7 +65,7 @@
 # On déclare notre élément JS
 
 	$("[rel=popover]").popover()
-	
+
 ---
 
 # 1ère façon : injection des paramètres dans le code HTML
@@ -79,9 +79,9 @@
 
 # 2ème façon : Injection des paramères dans le code JS
 
-	$("[rel=popover1]").popover({title: "Instruction 1", content:"Voici le résumé de ce que tu trouvera dans cet onglets, c'est fabuleux bootstrap",
+	$("[rel=popover1]").popover({title: "Instruction 1", content:"Voici le résumé de ce que tu trouveras dans ces onglets, c'est fabuleux bootstrap",
     	placement: "bottom", trigger: 'hover'});
-    	
+
 ---
 
 # Quelques paramètre du Popover
@@ -92,12 +92,12 @@
 * content
 * delay
 *exemple -> delay: { show: 500, hide: 100 }
-	
+
 ---
 
 # Personnification du Popover
 
-* On réecris le template :
+* On réecrit le template :
 	$("[rel=popover2]").popover({template : '<div class="popover"><div class="arrow"></div>
 		<div class="popover-inner"><div class="popover-content"><p></p></div></div></div>', placement: "bottom", trigger: "hover" })
-	
+
