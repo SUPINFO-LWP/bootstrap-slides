@@ -1,3 +1,7 @@
+#Pratique
+
+---
+
 # Installation
 
 	<head>
@@ -15,7 +19,7 @@
 
 # Premier pas !
 
-*	<p>Hello world</p>
+*	Hello world
 *	Sytème de grille
 
 ---
@@ -44,11 +48,13 @@
 # Correction
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navebar-inner">
-			<div class="nav-collapse collapse">
-				<ul class="nav">
-					<li><!-- Au travail --></li>
-				</ul>
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li><a href="votre_url">Votre lien</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

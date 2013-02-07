@@ -1,4 +1,4 @@
-# Theory
+# Theorie
 
 ---
 
@@ -41,5 +41,3 @@
         img/
         	glyphicons-halflings-white.png
         	glyphicons-halflings.png
-
----
